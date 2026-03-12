@@ -17,7 +17,7 @@ const fadeUp = {
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-8 pb-24 lg:pb-32 min-h-[95vh] rounded-b-[24px] lg:rounded-b-[62px] overflow-hidden">
+    <section className="relative pt-8 pb-10 md:pb-20 lg:pb-32 min-h-[95vh] rounded-b-[24px] lg:rounded-b-[62px] overflow-hidden">
       {/* BG mobile */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:opacity-100 opacity-0 transition-opacity"
@@ -32,7 +32,7 @@ const HeroSection = () => {
       />
       <div className="container-page relative z-10">
         {/* Nav */}
-        <nav className="flex items-center justify-between mb-[35%] lg:mb-[175px]">
+        <nav className="flex items-center justify-between mb-[60%] md:mb-[40%] lg:mb-[175px]">
           <span className="font-heading text-lg font-semibold text-[#FBFAF9] tracking-tight">
             Amanda Caroline
           </span>
@@ -65,7 +65,7 @@ const HeroSection = () => {
               acompanhamento psicológico online ou presencial.
             </p>
             <div className="flex flex-col lg:flex-row gap-4">
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="cta" size="xl" asChild className="bg-[#e7d0b8] text-secondary-foreground hover:bg-[#e7d0b8]/80">
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                   Agendar minha sessão
                 </a>
@@ -75,7 +75,7 @@ const HeroSection = () => {
                   href="https://instagram.com/amandacaroline.psi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="gap-2 text-[#FBFAF9]"
+                  className="gap-2 text-[#e7d0b8] hover:bg-[#e7d0b8]/80"
                 >
                   <Instagram className="w-4 h-4" />
                   @amandacaroline.psi
