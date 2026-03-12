@@ -9,6 +9,10 @@ export default defineConfig(({ mode }) => ({
   // Em produção, o Vite usa `base` para gerar URLs corretas para assets e rotas.
   // Configure via env var (ex: VITE_BASE=/amanda-caroline/) ou caia no default.
   base: process.env.VITE_BASE ?? (mode === "production" ? "/amanda-caroline/" : "/"),
+  // Gerar o build direto na pasta "docs" para usar com GitHub Pages (Source: main /docs)
+  build: {
+    outDir: "docs",
+  },
   server: {
     host: "::",
     port: 8080,
